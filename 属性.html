@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>属性</title>
+	<script type='text/javascript'>
+		window.onload=function(){
+			var oInp=document.querySelector('input');
+			for(var name in oInp.dataset){
+				document.write(name+'='+oInp.dataset[name]+'<br/>');
+			}
+		};
+	</script>
+</head>
+<body>
+	<input type="button" value="按钮" id="btn1" data-aaa="abc" data-bbb="bcd" data-ccc="cde" />
+</body>
+</html>

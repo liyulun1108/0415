@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>渐变</title>
+	<style type='text/css'>
+		*{margin:0; padding:0;}
+		div{width:300px; height:300px; margin:100px auto; background:-webkit-linear-gradient(0deg,purple,aqua); border-radius:50%;}
+	</style>
+	<script type='text/javascript'>
+		window.onload=function(){
+			var oDiv=document.querySelector('div');
+			var d=0;
+			setInterval(function(){
+				d++;
+				oDiv.style.background='-webkit-linear-gradient('+d+'deg,purple,aqua)';
+			},16)
+		};
+	</script>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

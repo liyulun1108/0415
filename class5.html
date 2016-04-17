@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>class</title>
+	<style type='text/css'>
+		div{width:200px; height:200px; background:red; display:none;}
+		div.on{display:block;}
+	</style>
+	<script type='text/javascript'>
+		window.onload=function(){
+			var oBtn=document.querySelector('input');
+			var oDiv=document.querySelector('div');
+			oBtn.onclick=function(){
+				oDiv.classList.toggle('on');
+			};
+		};
+	</script>
+</head>
+<body>
+	<input type="button" value="按钮">
+	<div></div>
+</body>
+</html>

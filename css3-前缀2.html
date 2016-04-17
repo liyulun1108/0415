@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>前缀</title>
+	<style type='text/css'>
+		div{width:200px; height:200px; background:red; position:absolute; top:0; left:0;
+			-webkit-transition:1s all ease;
+			-moz-transition:1s all ease;
+			-ms-transition:1s all ease;
+			-o-transition:1s all ease;
+			transition:1s all ease;
+		}
+		div:active{left:300px;}
+	</style>
+	<script type='text/javascript'>
+		window.onload=function(){
+			var oDiv=document.querySelector('div');
+			//oDiv.style.WebkitTransition='5s all ease';
+			//oDiv.style.MozTransition='5s all ease';
+			oDiv.style.msTransition='5s all ease';
+		};
+	</script>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

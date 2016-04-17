@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>animation</title>
+	<style type='text/css'>
+		*{margin:0; padding:0;}
+		@keyframes test{
+			from{width:200px;}
+			to{width:500px;}
+		}
+		div{width:200px; height:200px; background:#f40;}
+		div:hover{
+			animation-name:test;
+			animation-duration:1s;
+			animation-timing-function:ease;
+			animation-iteration-count:infinite;
+			animation-direction:alternate;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

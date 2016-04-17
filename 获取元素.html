@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>获取元素</title>
+	<script type='text/javascript'>
+		window.onload=function(){
+			var aEle=document.querySelectorAll('.box ul li input');
+			alert(aEle.length);
+		};
+	</script>
+</head>
+<body>
+	<div class="box">
+		<ul>
+			<li><input type="button" value='aaa'></li>
+			<li class='on'><input type="text" value='bbb'></li>
+			<li><input type="button" value='aaa'></li>
+			<li class='on'><input type="text" value='bbb'></li>
+		</ul>
+	</div>
+</body>
+</html>
